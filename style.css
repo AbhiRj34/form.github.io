@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sriracha', cursive;
+}
+.container {
+    max-width: 100%;
+    margin: auto;
+}
+.container h1,p{
+    text-align: center;
+}
+.container p{
+    font-size: 18px;
+}
+input,textarea{
+    display: block;
+    outline: none;
+    color: rgb(0, 0, 0);
+    width: 80%;
+    height: 50px;
+    margin: 8px auto;
+    padding: 8px;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 2px solid #000;
+    box-shadow: 10px 10px 30px #000;
+    background: none;
+}
+::-webkit-input-placeholder {
+    color: #000;
+}
+textarea {
+    height: 150px;
+}
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.btn {
+    color:  rgb(0, 0, 0);
+    background: rgba(255, 0, 0, 0.534);
+    padding: 8px 12px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    border-bottom: 2px solid #000;
+    box-shadow: 2px 2px 5px #000;
+    background: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.btn:hover {
+    box-shadow: none;
+    background: none;
+    color: rgb(255, 255, 255);
+}
+.bg {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.6;
+}
+#bm {
+    font-size: 35px;
+    color: green;
+} 
+
+@media screen and (max-width: 480px) {
+    .bg {
+        width: 100%;
+        height: 135vh;
+    }
+}
+/* https://docs.google.com/presentation/d/11LyI3shl7GRUe-Tv2FhbtH0ZYCJ2NeS8uO454TIZDhY/edit#slide=id.ge5526955b6_0_750 */
